@@ -1,0 +1,162 @@
+body{
+    background-color: rgba(248, 222, 193, 0.986);
+}
+header{
+    background-color: rgb(230, 230, 0);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 14%;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    box-shadow: -5px 6px 16px rgb(0, 0, 0, 0.4); 
+} 
+header .heading{
+    color: rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 5px 15px;
+    display: inline-block;
+    border: 3mm ridge rgb(61, 255, 103);
+    border-radius: 35px;
+}
+.banner{
+    position: relative;
+} 
+.banner .welcome{
+    background-color: rgb(240, 156, 0 , 0.7);
+    color: rgb(77, 77, 77);
+    padding: 30px;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+}
+.banner .welcome{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.welcome span{
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+.img1{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    background-color: blanchedalmond;
+    padding: 1px;
+}
+nav ul{
+    white-space: nowrap;
+
+}
+nav li{
+    display: inline-block;
+    text-align: center;
+    width: 18%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+    font-size: 180%;
+
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(134, 0, 0);
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 40px auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+
+}
+article h2{
+    color: red;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mainP{
+    line-height: 2em;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 34, 54);
+}
+.images{
+    text-align: center;
+    margin: 60px 0;
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 30px 30px;
+}
+.images li .img2{
+    max-width: 100%;
+}
+.join{
+    background-color: rgb(255, 227, 134);
+    text-align: center;
+    padding: 10px 10px;
+    color: rgb(32, 32, 32);
+}
+.join h2{
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    color: rgb(68, 68, 68);
+}
+.join p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form input{
+    margin: 30px 0px;
+    padding: 10px 30px;
+    font-size: 14px;
+    border: rgb(34, 28, 28) solid 4px;
+    border-radius: 28px;
+
+}
+footer{
+    background: rgb(255, 86, 86);   
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* pseudo classes */
+li a:hover{
+    color: rgba(224, 3, 3, 0.835);
+    font-size: 0.9em;
+}
+.images li:hover{
+    position: relative;
+    top: -4px;
+    box-shadow: 5px 5px 10px 1px rgba(27, 27, 32, 0.582);
+}
+form input:focus{
+    border: rgb(126, 148, 2) dashed 5px;
+    outline: none;
+}
+form input:valid{
+    border: rgb(61, 236, 30) solid 5px;
+}
+.mainP::first-letter{
+    font-size: 70px;
+}
+.mainP::first-line{
+    font-size: 1.2em;
+    color: rgb(68, 0, 0);
+
+}
+.join h2::selection{
+    background-color: rgb(197, 194, 4);
+}
+p::selection{
+    background-color: violet;
+}
