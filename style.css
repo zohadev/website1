@@ -1,5 +1,6 @@
 body{
     background-color: rgba(248, 222, 193, 0.986);
+    position: relative;
 }
 header{
     background-color: rgb(230, 230, 0);
@@ -92,8 +93,8 @@ article h2{
 }
 .images li{
     display: inline-block;
-    width: 40%;
-    margin: 30px 30px;
+    width: 38%;
+    margin: 30px 40px;
 }
 .images li .img2{
     max-width: 100%;
@@ -123,11 +124,10 @@ form input{
 }
 footer{
     background: rgb(255, 86, 86);   
-    margin: 40px;
     padding: 20px;
+    left: 0;
     text-align: center;
     font-size: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /* pseudo classes */
 li a:hover{
@@ -159,4 +159,68 @@ form input:valid{
 }
 p::selection{
     background-color: violet;
+}
+@media screen and (max-width: 1400px){
+    .banner .welcome{
+        font-size: 150%;
+    }
+    header {
+        height: 15%;
+    }
+
+    
+}
+@media screen and (max-width: 950px){
+    .banner .welcome{
+        font-size: 85%;
+    }
+    header .heading{
+        
+        font-size: 120%;
+    }
+    header {
+        height: 14%;
+        font-size: 120%;
+    }
+    nav li {
+       font-size: 140%; 
+    }
+}
+@media screen and (max-width: 760px){
+    .banner .welcome{
+        position: relative;
+        font-size: 60%;
+        height: 1.1em;
+        text-align: center;
+    }
+
+    h2 br{
+        display: none;
+        text-align: center;
+    }
+    header .heading{
+        font-size: 80%;
+    }
+    .welcome h2{
+        position: absolute;
+        bottom: 2%;
+        left: 28%;
+    }
+    header {
+        height: 11.5%;
+        font-size: 110%;
+    }
+    .welcome span{
+        font-size: 2.5em;
+    }
+    nav li {
+       font-size: 110%; 
+    }
+    .images li{
+        width: 100%;
+        display: block;
+        margin: 30px auto;
+    }
+    
+
 }
