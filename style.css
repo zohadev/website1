@@ -3,7 +3,7 @@ body{
     position: relative;
 }
 header{
-    background-color: rgb(230, 230, 0);
+    background-color: rgba(252, 255, 58, 0.938);
     text-align: center;
     position: fixed;
     width: 100%;
@@ -14,23 +14,25 @@ header{
     box-shadow: -5px 6px 16px rgb(0, 0, 0, 0.4); 
 } 
 header .heading{
-    color: rgb(0, 0, 0);
+    color: rgba(4, 0, 255, 0.945);
     font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
     font-size: 25px;
     padding: 5px 15px;
     display: inline-block;
-    border: 3mm ridge rgb(61, 255, 103);
+    border: 3mm ridge rgb(203, 193, 255);
     border-radius: 35px;
 }
 .banner{
     position: relative;
 } 
 .banner .welcome{
-    background-color: rgb(240, 156, 0 , 0.7);
-    color: rgb(77, 77, 77);
-    padding: 30px;
+    background-color: rgba(25, 0, 255, 0.5);
+    border-radius: 3%;
+    color: rgb(229, 255, 0);
+    padding: 0px 40px;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 0%;
 }
 .banner .welcome{
@@ -86,12 +88,22 @@ article h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(0, 34, 54);
 }
+.gallery{
+    display: block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(47, 0, 255);
+    background: rgba(226, 211, 0, 0.89);   
+    padding: 10px 60px;
+    left: 0;
+    text-align: center;
+    font-size: 20px;
+}
 .images{
     text-align: center;
     margin: 60px 0;
-    white-space: nowrap;
 }
 .images li{
+    white-space: nowrap;
     display: inline-block;
     width: 38%;
     margin: 30px 40px;
@@ -123,11 +135,16 @@ form input{
 
 }
 footer{
-    background: rgb(255, 86, 86);   
+    background: rgb(64, 61, 255);   
     padding: 20px;
     left: 0;
     text-align: center;
     font-size: 20px;
+}
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 0);
+    font-size: 15px;
 }
 /* pseudo classes */
 li a:hover{
@@ -162,7 +179,7 @@ p::selection{
 }
 @media screen and (max-width: 1400px){
     .banner .welcome{
-        font-size: 150%;
+        font-size: 120%;
     }
     header {
         height: 15%;
@@ -172,7 +189,7 @@ p::selection{
 }
 @media screen and (max-width: 950px){
     .banner .welcome{
-        font-size: 85%;
+        font-size: 100%;
     }
     header .heading{
         
@@ -188,9 +205,10 @@ p::selection{
 }
 @media screen and (max-width: 760px){
     .banner .welcome{
+        background: rgba(36, 36, 241, 0.835);
         position: relative;
-        font-size: 60%;
-        height: 1.1em;
+        font-size: 55%;
+        height: 7em;
         text-align: center;
     }
 
