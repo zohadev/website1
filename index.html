@@ -7,14 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-    <script>
+<!--     <script>
           window.OneSignal = window.OneSignal || [];
             OneSignal.push(function() {
               OneSignal.init({
                   appId: "8ffcbc92-4ebf-4415-b2d3-7a03cf73c4da",
                     });
                 });
+    </script> -->
+<!--   chatroot script   -->
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://app.chatwoot.com";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'Heg24Rsx8bLZCs4fkhxsKPWg',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
     </script>
+    
     <title>MarioClub</title>
 </head>
 
